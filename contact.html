@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cat Care Collective: Home</title>
+    <title>Cat Care Collective: Services</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,68 +32,50 @@
       </ul>
       <button class="booking-btn"><a href="contact.html">Book Now</a></button>
     </nav>
-    <header>
-      <h1>Cat Care Collective</h1>
-      <p>Providing the best care for your feline friends</p>
-      <button class="booking-btn-second">
-        <a href="contact.html">Book Now</a>
-      </button>
-    </header>
-    <section class="mission">
-      <h2>Our Mission</h2>
-      <p>
-        At Cat Care Collective, we believe that every cat deserves the best care
-        possible. We provide a range of services to help you keep your feline
-        friend happy and healthy.
-      </p>
-    </section>
-    <section class="testimonial-container">
-      <div class="testimonial-title"><h2>Testimonials</h2></div>
-      <div class="testimonials">
-        <div class="testimonial">
-          <i class="ri-double-quotes-l"></i>
-          <p>
-            Erika always provides such an outstanding service. You can easily
-            tell from the way the cats behave when you arrive home that they
-            have been given plenty of love and attention.
-          </p>
-          <i class="ri-double-quotes-r"></i>
-          <h3>Steph</h3>
-        </div>
-        <div class="testimonial">
-          <i class="ri-double-quotes-l"></i>
-          <p>
-            Erika is trustworthy, quick to communicate, and great with our cats.
-            An excellent cat sitter!
-          </p>
-          <i class="ri-double-quotes-r"></i>
-          <h3>Rory</h3>
-        </div>
-        <div class="testimonial">
-          <i class="ri-double-quotes-l"></i>
-          <p>
-            Erika is reliable, caring and attentive. She bonded with my cat
-            straight away and he loved the attention!
-          </p>
-          <i class="ri-double-quotes-r"></i>
-          <h3>Sue</h3>
-        </div>
+    <section>
+      <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions or want to book a service? Reach out to us using the
+          form below!
+        </p>
       </div>
-    </section>
-    <section class="cat-gallery-container">
-      <h2><a href="gallery.html">Gallery</a></h2>
-      <div class="cat-gallery-items">
-        <ul>
-          <li>
-            <img src="assets/benji.jpeg" alt="Cat Benji" />
-          </li>
-          <li>
-            <img src="assets/maia.jpeg" alt="Cat Maia" />
-          </li>
-          <li>
-            <img src="assets/maxi.jpeg" alt="Cat Maxi" />
-          </li>
-        </ul>
+      <div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Service</label>
+            <select id="service" name="service">
+              <option value="daily-drop-ins">Daily Drop-Ins</option>
+              <option value="overnight-stays">Overnight Stays</option>
+              <option value="medication-administration">
+                Medication Administration
+              </option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Type your message here"
+            ></textarea>
+          </div>
+          <button class="send-btn" type="submit">Send</button>
+        </form>
       </div>
     </section>
     <footer>
