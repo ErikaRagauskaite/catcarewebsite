@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Care Collective: Services</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +23,9 @@
   <body>
     <nav>
       <div class="logo">
-        <img src="assets/cccother.png" alt="Cat Care Collective Logo" />
+        <a href="index.html">
+          <img src="assets/cccother.png" alt="Cat Care Collective Logo" />
+        </a>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -37,7 +41,8 @@
         <h2>Contact Us</h2>
         <p>
           Have questions or want to book a service? Reach out to us using the
-          form below!
+          form below! <br />Once we recieve your message, we'll get back to you
+          through email.
         </p>
       </div>
       <div>
@@ -58,6 +63,7 @@
             <label for="service">Service</label>
             <select id="service" name="service">
               <option value="daily-drop-ins">Daily Drop-Ins</option>
+              <option value="extended-stay-visits">Extended Stay Visits</option>
               <option value="overnight-stays">Overnight Stays</option>
               <option value="medication-administration">
                 Medication Administration
@@ -66,12 +72,39 @@
             </select>
           </div>
           <div class="form-group">
+            <label for="number-of-cats">Number of Cats</label>
+            <input
+              type="number"
+              id="number-of-cats"
+              name="number-of-cats"
+              min="1"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="start-date">Booking Start</label>
+            <input type="date" id="start-date" name="start-date" required />
+          </div>
+          <div class="form-group">
+            <label for="end-date">Booking End</label>
+            <input type="date" id="end-date" name="end-date" required />
+          </div>
+          <div class="form-group">
+            <label for="estimated-price">Estimated price per day</label>
+            <input
+              type="text"
+              id="estimated-price"
+              name="estimated-price"
+              readonly
+            />
+          </div>
+          <div class="form-group">
             <label for="message">Message</label>
             <textarea
               id="message"
               name="message"
               rows="5"
-              placeholder="Type your message here"
+              placeholder="Add as much detail about your request as you can!"
             ></textarea>
           </div>
           <button class="send-btn" type="submit">Send</button>
@@ -108,5 +141,7 @@
       </div>
       <p>&copy; Cat Care Collective 2024</p>
     </footer>
+
+    <script src="price.js"></script>
   </body>
 </html>
